@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <header class="text-center font-semibold text-5xl mb-5">
+        <h1>Money Master</h1>
+    </header>
+
+    <main>
+        <section class="grid grid-cols-2 gap-11">
+            <article>
+                <img src="images/money-skills-master-in-20s-01.jpg" alt="">
+
+            </article>
+            <article class="text-center bg-slate-200" >
+                <h2 class="mb-5 font-semibold">Income</h2>
+                <div >
+                    <h3 class="inline-block mb-5">Income:</h3>
+                    <input id="income" class="w-48 p-2" type="text">
+                </div>
+                <div >
+                    <h2 class="mb-5 font-semibold">Expeness</h2>
+                    <!-- food -->
+                    <div >
+                        <h3 class="inline-block mb-5">food:</h3>
+                        <input id="food" class="w-48	" type="text">
+                    </div>
+                    <!-- rent -->
+                    <div >
+                        <h3  class="inline-block	mb-5">Rent:</h3>
+                        <input id="rent" class="w-48	" type="text">
+                    </div>
+                    <!-- clothes -->
+                    <div>
+                        <h3 
+                        class="inline-block	">Clothes:</h3>
+                        <input id="clothes" class="w-48" type="text">
+                    </div>
+                </div>
+                <button id="calculate" class="bg-rose-600 p-3 w-24 text-white font-semibold mt-5 rounded">Calculate</button>
+
+                
+                <h2 class="mt-5 font-semibold">Total Expenses: <span id="total-expenses">00</span></h2>
+                <h2 class="mt-5 font-semibold">Balance: <span id="balance-total">00</span></h2>
+
+                    <h3 class="font-semibold mt-5 inline-block">save:</h3>
+                    <input id="discount" type="text">
+                    <h3 class="inline-block">%</h3>
+                    <button id="save" class="bg-rose-600 p-3 w-20 text-white font-semibold rounded">save</button>
+                </div>
+                <h1>Saving Amount : <span id="saving">00</span>
+                </h1>
+                <h1>Remaining Balance: <span id="last-balance">00</span>
+                </h1>
+    
+               
+            </article>
+        </section>
+    </main>
+    <script src="commom.js"></script>
+    <script src="calculate.js"></script>
+    <script src="discount.js"></script>
+</body>
+</html>
